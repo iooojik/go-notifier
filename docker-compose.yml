@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  redis:
+    image: "redis:alpine"
+    networks:
+      local:
+        aliases:
+          - redis
+  notifier:
+    image: notifier
+    env_file:
+      - .cfg
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+    networks:
+      local:
+        aliases:
+          - notifier
+    restart: on-failure
+    command: /bin/sh -c "while true; do /app/main; sleep 1800; done"
+volumes:
+  db:
+networks:
+  local:

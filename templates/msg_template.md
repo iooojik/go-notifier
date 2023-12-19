@@ -1,0 +1,5 @@
+GO VERSION UPDATE
+
+New version: ${VERSION}
+
+Download URL: ${DOWNLOAD_URL}
