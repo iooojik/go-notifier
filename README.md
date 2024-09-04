@@ -44,10 +44,10 @@ Example: https://t.me/go_versions
 
 2. Set up environment variables:
 
-   Copy the `.env.example` to `.env` and fill in the required variables.
-
+   Copy the `.env` to `.cfg` and fill in the required variables. (send message from your public
+   to https://t.me/my_id_bot to get chat ID)
    ```bash
-   cp .env.example .env
+   cp .env .cfg
    ```
 
 3. Build and run the application:
@@ -68,7 +68,7 @@ Example: https://t.me/go_versions
 2. Run the container:
 
    ```bash
-   docker-compose up
+   docker compose build && docker compose up
    ```
 
 ## Usage
