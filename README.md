@@ -38,7 +38,7 @@ Example: https://t.me/go_versions
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/go-notifier.git
+   git clone https://github.com/iooojik/go-notifier.git
    cd go-notifier
    ```
 
