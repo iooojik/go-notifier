@@ -4,6 +4,8 @@ Go Notifier is a notification service written in Go that leverages a bot to send
 events. The service is designed to be easily configurable and extendable, making it suitable for various notification
 use cases.
 
+Example: https://t.me/go_versions
+
 ## Features
 
 - **Bot Integration**: Utilizes a bot to send notifications.
