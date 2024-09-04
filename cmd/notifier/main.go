@@ -4,12 +4,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
+	"strings"
+
 	"github.com/fsnotify/fsnotify"
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
 	"go-notifier/internal"
-	"log"
-	"strings"
 )
 
 const (

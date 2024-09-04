@@ -1,11 +1,12 @@
 package internal
 
 import (
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGetLatestGoVersion(t *testing.T) {

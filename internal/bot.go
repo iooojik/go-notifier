@@ -1,11 +1,12 @@
 package internal
 
 import (
-	tgbotapi "github.com/Syfaro/telegram-bot-api"
 	"log"
 	"os"
 	"strconv"
 	"strings"
+
+	tgbotapi "github.com/Syfaro/telegram-bot-api"
 )
 
 func SendMessage(goVersion, u, token string, chatIds []string) error {
